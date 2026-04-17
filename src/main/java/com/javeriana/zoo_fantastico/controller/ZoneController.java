@@ -18,7 +18,7 @@ import com.javeriana.zoo_fantastico.model.Zone;
 import com.javeriana.zoo_fantastico.service.ZoneService;
 
 @RestController
-@RequestMapping("/api/zones")
+@RequestMapping("/zones")
 public class ZoneController {
 
     private final ZoneService zoneService;

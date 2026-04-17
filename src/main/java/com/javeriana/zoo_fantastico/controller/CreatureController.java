@@ -18,7 +18,7 @@ import com.javeriana.zoo_fantastico.model.Creature;
 import com.javeriana.zoo_fantastico.service.CreatureService;
 
 @RestController
-@RequestMapping("/api/creatures")
+@RequestMapping("/creatures")
 public class CreatureController {
 
     private final CreatureService creatureService;
