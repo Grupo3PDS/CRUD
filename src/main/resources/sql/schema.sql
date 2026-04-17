@@ -20,8 +20,3 @@ CREATE TABLE IF NOT EXISTS creature (
     FOREIGN KEY (zone_id) REFERENCES zone(id) ON DELETE SET NULL,
     UNIQUE KEY unique_creature_zone (name, zone_id)
 );
-
--- Create indexes for better query performance
-CREATE INDEX idx_creature_zone_id ON creature(zone_id);
-CREATE INDEX idx_creature_species ON creature(species);
-CREATE INDEX idx_zone_name ON zone(name);
